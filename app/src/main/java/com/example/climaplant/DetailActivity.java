@@ -1,7 +1,10 @@
 package com.example.climaplant;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.climaplant.databinding.ActivityDetailBinding;
 
@@ -28,8 +31,18 @@ public class DetailActivity extends AppCompatActivity {
 
         fetchWeatherData(plant.getName());
 
-        String cityName = "marseille";  // Vous pouvez passer le nom de la ville en fonction de la plante ou d'autres données
+        String cityName = "Paris";
         fetchWeatherData(cityName);
+
+        binding.titleTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://fr.wikipedia.org/wiki/" + plant.getName();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+            }
+        });
     }
 
     private void fetchWeatherData(String cityName) {
