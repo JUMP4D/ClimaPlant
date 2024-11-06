@@ -7,4 +7,6 @@
     <string name="editdesc">description</string>
     <string name="add_plant">Ajouter une plante</string>
     <string name="titleMeteo">Météo des prochains jours :</string>
+    <string name="textLocalisation">localisation :</string>
+    <string name="editLocalisation">localisation</string>
 </resources>

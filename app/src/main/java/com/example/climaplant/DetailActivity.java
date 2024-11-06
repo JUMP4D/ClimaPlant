@@ -29,9 +29,11 @@ public class DetailActivity extends AppCompatActivity {
 
         binding.nom.setText(plant.getName());
 
+        binding.titleMeteo.setText("Prévisions météo " + plant.getLocation());
+
         fetchWeatherData(plant.getName());
 
-        String cityName = "Paris";
+        String cityName = plant.getLocation();
         fetchWeatherData(cityName);
 
         binding.titleTextView.setOnClickListener(new View.OnClickListener() {
