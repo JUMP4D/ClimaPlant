@@ -9,4 +9,9 @@
     <string name="titleMeteo">Météo des prochains jours :</string>
     <string name="textLocalisation">localisation :</string>
     <string name="editLocalisation">localisation</string>
+    <string-array name="plant_array">
+        <item>tous les jours</item>
+        <item>tous les 3 jours</item>
+    </string-array>
+    <string name="Arrosag">Arrosage :</string>
 </resources>

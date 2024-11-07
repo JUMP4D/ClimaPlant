@@ -31,6 +31,8 @@ public class DetailActivity extends AppCompatActivity {
 
         binding.titleMeteo.setText("Prévisions météo " + plant.getLocation());
 
+        binding.titlearrosage.setText("Arrosage " + plant.getArrosage());
+
         fetchWeatherData(plant.getName());
 
         String cityName = plant.getLocation();
