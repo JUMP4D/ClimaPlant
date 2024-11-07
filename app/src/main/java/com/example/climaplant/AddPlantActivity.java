@@ -33,10 +33,9 @@ public class AddPlantActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = binding.textEditNom.getText().toString();
-                String description = binding.textEditDesc.getText().toString();
                 String location = binding.textEditloc.getText().toString();
                 String arrosage = binding.spinner.getSelectedItem().toString();
-                Plant plant = new Plant(name, description, location, arrosage);
+                Plant plant = new Plant(name, location, arrosage);
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("plant", plant);
                 setResult(1, resultIntent);

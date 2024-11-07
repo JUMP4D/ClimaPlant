@@ -41,19 +41,19 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.PlantViewHol
 
     public static class PlantViewHolder extends RecyclerView.ViewHolder {
         TextView plantName;
-        TextView plantDescription;
+        TextView plantarosage;
         TextView plantLocation;
 
         public PlantViewHolder(@NonNull View itemView) {
             super(itemView);
             plantName = itemView.findViewById(R.id.plant_name);
-            plantDescription = itemView.findViewById(R.id.plant_description);
+            plantarosage= itemView.findViewById(R.id.plant_arosage);
             plantLocation = itemView.findViewById(R.id.plant_location);
         }
 
         public void bind(final Plant plant, final OnPlantClickListener listener) {
             plantName.setText(plant.getName());
-            plantDescription.setText(plant.getDescription());
+            plantarosage.setText("Arrosage " +plant.getArrosage());
             plantLocation.setText("\uD83D\uDCCD " + plant.getLocation());
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

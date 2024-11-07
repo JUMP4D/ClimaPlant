@@ -3,8 +3,6 @@
     <string name="title">ClimaPlant</string>
     <string name="txtNom">nom :</string>
     <string name="editNom">nom</string>
-    <string name="txtdesc">description :</string>
-    <string name="editdesc">description</string>
     <string name="add_plant">Ajouter une plante</string>
     <string name="titleMeteo">Météo des prochains jours :</string>
     <string name="textLocalisation">localisation :</string>
