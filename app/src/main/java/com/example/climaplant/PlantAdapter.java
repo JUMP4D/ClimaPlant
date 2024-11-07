@@ -3,6 +3,7 @@ package com.example.climaplant;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextClock;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,16 +42,19 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.PlantViewHol
     public static class PlantViewHolder extends RecyclerView.ViewHolder {
         TextView plantName;
         TextView plantDescription;
+        TextView plantLocation;
 
         public PlantViewHolder(@NonNull View itemView) {
             super(itemView);
             plantName = itemView.findViewById(R.id.plant_name);
             plantDescription = itemView.findViewById(R.id.plant_description);
+            plantLocation = itemView.findViewById(R.id.plant_location);
         }
 
         public void bind(final Plant plant, final OnPlantClickListener listener) {
             plantName.setText(plant.getName());
             plantDescription.setText(plant.getDescription());
+            plantLocation.setText("\uD83D\uDCCD " + plant.getLocation());
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements OnPlantClickListe
         binding.titleTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.willemsefrance.fr/collections/plantes";
+                String url = "https://www.truffaut.com/plantes/idees-et-conseils.html";
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
                 startActivity(intent);

@@ -18,6 +18,7 @@ public class Plant implements Serializable {
     }
 
     public String getDescription() {
+
         return description;
     }
 
