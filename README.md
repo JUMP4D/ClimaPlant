@@ -6,3 +6,5 @@
 ## library utiliser :
 + Retrofit
 + Gson
+
+## Fonctionnalités 🌟
